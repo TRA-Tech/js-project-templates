@@ -1,0 +1,78 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "flowtype",
+        "react"
+    ],
+    "rules": {
+        "react/function-component-definition": [2, {"namedComponents": "arrow-function"}],
+        "max-len": ["error", { "code": 150 }], // Maks satır karakter sayısı dafultta 80 olarak ayarlanıyor.
+        "arrow-parens": [ // Arrow functionlarda gereksiz parentez kullanımını önlerken gerektiğinde kullanılmasını sağlayan kural.
+          "error",
+          "as-needed"
+        ],
+        "no-confusing-arrow": [ // Arrow functionların kullanımı ile ilgili kural https://eslint.org/docs/rules/no-confusing-arrow
+          "error",
+          {
+            "allowParens": true
+          }
+        ],
+        "object-curly-newline": [ // Süslü parentezden sonra boşluk olmamalı kuralı
+          "error",
+          {
+            "consistent": true
+          }
+        ],
+        "implicit-arrow-linebreak": 2, // Biz bu kuralı beside olarak kullanıyoruz. Yani arrowdan sonra gelecek expression arrow un yanında olmalı şeklinde. https://eslint.org/docs/rules/implicit-arrow-linebreak
+        "operator-linebreak": 2, // Satır sonlarında operatör olmaması ile ilgili kural
+        "linebreak-style": 0, // Satır sonları stili ile alaklı bir kural. Buna sanırım kendimiz müdahale edemiyoruz. İşletim sistemi ile alakalı bir durum. -- O
+        "import/no-extraneous-dependencies": 2, // Dependency olarak eklenmemiş bir paket import edilemez. -- 
+        "import/prefer-default-export": 2, // Tek bir export olduğunda default kullanılmasını zorunlu tutan kural. https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/prefer-default-export.md
+        "react/forbid-prop-types": [2, {"forbid": ["any"]}], // Bazı prop typeları yasaklayan kural. Hangilerinin yasaklanacağı da belirlenebiliyor. -- Sadece any izin verilmeyecek -- https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md
+        "react/jsx-filename-extension": [ // jsx elementlerini .jsx uzantılarında tutmak gerektiğine dair bir kural. Burada .js uzantısına da izin veriyoruz.
+          2,
+          {
+            "extensions": [
+              ".js",
+              ".jsx"
+            ]
+          }
+        ],
+        "react/jsx-props-no-spreading": 2, // JSX componentlerinde kullanılacak propların explicit olarak yazılması için
+        "react/jsx-curly-newline": 2, // JSX içerisinde kullanılacak süslü parentez yazımına dair bir kural https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-curly-newline.md
+        "react/static-property-placement": 0, // Static componentlerin yazımı ile alakalı kural, farklı yazım stilleri için -- O -- https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/static-property-placement.md
+        "react/state-in-constructor": 0, // Eski stil class component yazımında constructorın kullanılması veya kullanılmaması ile alakalı kural
+        "react/no-array-index-key": 0,  // JSX elementlerinde key olarak index verilmesini engelleyen kural
+        "jsx-a11y/label-has-associated-control": 0, // label yazımlarıyla ilgili kural -- X -- https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/label-has-associated-control.md
+        "jsx-a11y/control-has-associated-label": 0, // kontrollerin label texte sahip olmasını zorunlu kılar -- X -- https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/control-has-associated-label.md
+        "react/prop-types": 2, // Prop type belirtilmesi ile alakalı kural. -- O -- https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prop-types.md
+        "no-param-reassign": 0,
+        "consistent-return": 0
+    },
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "extensions": [
+              ".js",
+              ".jsx",
+              ".ts",
+              ".tsx"
+            ]
+          }
+        }
+      }
+}
