@@ -7,8 +7,8 @@ const WebSocketConstants = {
     NotConnected: 4,
   },
   MessageTypes: {
-    nameOfMessageType: 'nameOfMessageType',
-    nameOfMessageType2: 'nameOfMessageType2',
+    NameOfMessageType: 'nameOfMessageType',
+    NameOfMessageType2: 'nameOfMessageType2',
   },
 };
 
