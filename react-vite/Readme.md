@@ -6,6 +6,7 @@ React and Vite starter template.
 
 - [React](https://reactjs.org) with [Vite](https://vitejs.dev).
 - Linting with [ESLint](https://eslint.org) and [stylelint](https://stylelint.io) on VSCode.
+- Ready to use WebSocket [context](https://github.com/TRA-Tech/js-project-templates/tree/main/react-vite/src/contexts/WebSocket).
 
 ## Getting started
 
