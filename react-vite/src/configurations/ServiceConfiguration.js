@@ -11,11 +11,12 @@ const ServiceConfiguration = {
           'Access-Control-Allow-Origin': '*',
         },
       }),
-      post: () => ({
+      post: data => ({
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${LocalStorageUtilities.userToken()}`,
+          body: JSON.stringify(data),
           'Access-Control-Allow-Origin': '*',
         },
       }),
@@ -25,9 +26,10 @@ const ServiceConfiguration = {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' },
       }),
-      post: () => ({
+      post: data => ({
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
       }),
     },
   },

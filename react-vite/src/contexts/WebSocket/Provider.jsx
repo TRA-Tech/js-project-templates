@@ -47,7 +47,7 @@ const WebSocketProvider = ({ children }) => {
 
   const connectWs = () => {
     setWebSocketState(wsStates.Connecting);
-    const wssUrl = ApiConfiguration.getBaseUrl('service1Wss').concat(`/ws?token=${LocalStorageUtilities.userToken()}`);
+    const wssUrl = ApiConfiguration.getBaseUrl(ApiConfiguration.service1Wss).concat(`/ws?token=${LocalStorageUtilities.userToken()}`);
     wsRef.current = new WebSocket(wssUrl);
 
     wsRef.current.onopen = () => {
