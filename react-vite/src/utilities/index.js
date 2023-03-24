@@ -1,6 +1,6 @@
-import EnvironmentUtilities from './EnvironmentUtilities';
-import LocalStorageUtilities from './LocalStorageUtilities';
-import FetchUtilities from './FetchUtilities';
+import EnvironmentUtilities from './Environment';
+import LocalStorageUtilities from './LocalStorage';
+import FetchUtilities from './Fetch';
 
 const Utilities = {
   Environment: EnvironmentUtilities,

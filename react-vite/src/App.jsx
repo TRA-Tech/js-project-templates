@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import EnvironmentUtilities from './utilities/EnvironmentUtilities';
+import EnvironmentUtilities from './utilities/Environment';
 import Service1 from './services/service1';
 import Header from './components/Header';
 import WebSocketProvider from './contexts/WebSocket/Provider';

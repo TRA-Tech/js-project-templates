@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import EnvironmentUtilities from '../utilities/EnvironmentUtilities';
+import EnvironmentUtilities from '../utilities/Environment';
 
 const ApiConfiguration = {
   service1: {

@@ -1,5 +1,5 @@
-import EnvironmentConstants from './EnvironmentConstants';
-import WebSocketConstants from './WebSocketConstants';
+import EnvironmentConstants from './Environment';
+import WebSocketConstants from './WebSocket';
 
 const Constants = {
   Environment: EnvironmentConstants,

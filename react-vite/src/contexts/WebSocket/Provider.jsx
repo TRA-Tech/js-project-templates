@@ -1,9 +1,9 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import Constants from '../../constants/index';
-import EnvironmentUtilities from '../../utilities/EnvironmentUtilities';
-import ApiConfiguration from '../../configurations/ApiConfiguration';
-import LocalStorageUtilities from '../../utilities/LocalStorageUtilities';
+import EnvironmentUtilities from '../../utilities/Environment';
+import ApiConfiguration from '../../configurations/Api';
+import LocalStorageUtilities from '../../utilities/LocalStorage';
 import WebSocketContext from './Context';
 
 const wsStates = Constants.WebSocket.States;

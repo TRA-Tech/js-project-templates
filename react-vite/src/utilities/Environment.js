@@ -1,4 +1,4 @@
-import EnvironmentConstants from '../constants/EnvironmentConstants';
+import EnvironmentConstants from '../constants/Environment';
 
 const EnvironmentUtilities = {
   getEnvironment: () => {

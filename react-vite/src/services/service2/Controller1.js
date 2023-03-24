@@ -1,10 +1,9 @@
 /* Exapmle service */
-import Configurations from '../../configurations';
-import ApiConfiguration from '../../configurations/ApiConfiguration';
-import ServiceConfiguration from '../../configurations/ServiceConfiguration';
-import FetchUtilities from '../../utilities/FetchUtilities';
+import ApiConfiguration from '../../configurations/Api';
+import ServiceConfiguration from '../../configurations/Service';
+import FetchUtilities from '../../utilities/Fetch';
 
-const baseService2Url = Configurations.Api.getBaseUrl(ApiConfiguration.service2);
+const baseService2Url = ApiConfiguration.getBaseUrl(ApiConfiguration.service2);
 
 const Controller1 = {
   Action1: () => {

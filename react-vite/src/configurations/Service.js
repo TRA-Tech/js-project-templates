@@ -1,4 +1,4 @@
-import LocalStorageUtilities from '../utilities/LocalStorageUtilities';
+import LocalStorageUtilities from '../utilities/LocalStorage';
 
 const ServiceConfiguration = {
   RequestOptions: {

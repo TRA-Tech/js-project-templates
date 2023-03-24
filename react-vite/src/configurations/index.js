@@ -1,5 +1,5 @@
-import ApiConfiguration from './ApiConfiguration';
-import ServiceConfiguration from './ServiceConfiguration';
+import ApiConfiguration from './Api';
+import ServiceConfiguration from './Service';
 
 const Configurations = {
   Api: ApiConfiguration,
