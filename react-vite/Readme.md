@@ -37,3 +37,10 @@ npm install
 - `npm run fix:css` - fix all auto-fixable errors with Stylelint.
 - `npm run lint:js` - run ESLint.
 - `npm run fix:js` - fix all auto-fixable errors with ESLint.
+
+## To Do List
+
+- [ ] `UI KIT` - Which UI kit to use will be determined.
+- [ ] `Layout Structures` - Layout structures to be used in the project content will be determined.
+- [ ] `Loading Screen` - Loading Screen will be added (react-loading-ui).
+- [ ] `Fetch Structure` - Fetch structure will be determined and added.
