@@ -45,3 +45,4 @@ npm install
 - [ ] `Layout Structures` - Layout structures to be used in the project content will be determined.
 - [ ] `Loading Screen` - Loading Screen will be added (react-loading-ui).
 - [ ] `Fetch Structure` - Fetch structure will be determined and added.
+- [ ] `Multi Language Support` - The template should support multi-language structure.
