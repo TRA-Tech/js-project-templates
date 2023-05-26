@@ -52,7 +52,7 @@
             ]
           }
         ],
-        "react/jsx-props-no-spreading": 2, // JSX componentlerinde kullanılacak propların explicit olarak yazılması için
+        "react/jsx-props-no-spreading": "off",
         "react/jsx-curly-newline": 2, // JSX içerisinde kullanılacak süslü parentez yazımına dair bir kural https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-curly-newline.md
         "react/static-property-placement": 0, // Static componentlerin yazımı ile alakalı kural, farklı yazım stilleri için -- O -- https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/static-property-placement.md
         "react/state-in-constructor": 0, // Eski stil class component yazımında constructorın kullanılması veya kullanılmaması ile alakalı kural
